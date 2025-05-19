@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARTHAK INTEGRATORS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="images/Sarthak Logo-01.png" alt="Company Logo" class="logo">
+            <h1 class="company-name-header">SARTHAK INTEGRATORS</h1>
+        </div>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#hero" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Our Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Precision Protection, Anytime, Anywhere</h1>
+                <p class="hero-description">
+                    A Jaipur based company, specializes in advanced radar and microwave based technologies, including ground and aerial radars, proximity fuses, and homing missile guidance systems. With a state-of-the-art R&D and manufacturing facility, we design and develop fully indigenous radar systems tailored for security and intelligence needs. Our expertise covers surveillance radars (Ground, Air, Coastal), drone detection radars, AESA radars, Doppler weather radars, and more. In collaboration with Raddef, our technical partner, we strive to innovate and deliver cutting-edge radar solutions for diverse applications.
+                </p>
+                <p class="hero-tagline">SEE WITHOUT BEING SEEN</p>
+            </div>
+        </section>
+
+        <section id="products" class="page-section products-section">
+            <h2 class="section-title"> Our Products</h2>
+
+            <h4 class="section-subtitle"><b>Ground Surveillance Radar</b></h4>
+            <p class="bullet-list">Our Ground Surveillance Radar is a highly adaptable and cost-effective solution, offering significant advantages for various applications. It's an excellent choice for securing borders, battlefield monitoring, protecting civilian and military installations, and supporting combat operations.</p>
+            <p class="bullet-list">The GSR is portable enough to be carried in backpacks by two-person teams, allowing coverage of areas difficult for vehicles to access.</p>
+            <p class="bullet-list">It can also be easily mounted on vehicles and at field posts as operational needs dictate.</p>
+            <p class="bullet-list">This radar can function as a standalone unit or be integrated into a network of radars, depending on the specific requirements of the surveillance scenario.</p>
+            <br>
+
+            <h4 class="section-subtitle"><b>Coastal Surveillance Radar</b></h4>
+            <p class="bullet-list">Maintaining control over maritime areas is critical for national security. It directly influences border security, territorial integrity, and the Exclusive Economic Zones (EEZs). Ensuring sovereignty in these regions is essential for economic stability, preventing illegal activities, and safeguarding valuable offshore resources.</p>
+            <p class="bullet-list">Our Coastal Surveillance Systems (CSS) are vital in addressing these challenges. They integrate advanced sensors, radar technologies, and communication networks to monitor coastal and maritime environments. These systems provide real-time intelligence to detect unauthorized vessel movements, deter smuggling, combat piracy, and effectively support search and rescue (SAR) operations.</p>
+            <p class="bullet-list">Beyond security, CSS contributes to protecting human lives, the environment, and critical offshore infrastructure like oil rigs, wind farms, and undersea communication cables. By providing comprehensive awareness of maritime situations, these surveillance systems enhance Maritime Domain Awareness (MDA) and assist law enforcement agencies, coast guards, and naval forces in ensuring safe and secure waters.</p>
+            <br>
+
+            <h4 class="section-subtitle"><b>Fog Penetration Radars</b></h4>
+            <p class="bullet-list">Border surveillance in areas prone to dense fog, prevalent in many parts of the North, West, and East, presents a significant challenge due to limited visibility. This vulnerability is often exploited by anti-national elements for their illicit activities.</p>
+            <p class="bullet-list">Our fog penetration technology can help detect targets even in heavy fog and adverse weather conditions. This capability is crucial for countering infiltration and smuggling activities in border regions.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="copyright">© 2025 Sarthak Integrators. All rights reserved.</p>
+        <div class="footer-contact-info">
+            <p>Address: -E697,Sitapura Industrial Area, Jaipur 302022</p>
+            <p>Email: <a href="abhinav@sarthakintegrators.co.in">abhinav@sarthakintegrators.co.in</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.main-navigation a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - document.querySelector('.site-header').offsetHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header hide/show on scroll
+        let lastScrollTop = 0;
+        const header = document.querySelector('.site-header');
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+</body>
+</html>

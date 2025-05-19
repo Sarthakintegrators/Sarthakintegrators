@@ -1,0 +1,233 @@
+/* General Reset and Box Sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.site-header {
+    background: rgba(58, 82, 51, 0.9);
+    padding: 18px 20px; /* Adjusted padding for better responsiveness */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.site-header.hidden {
+    transform: translateY(-100%);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Adjusted logo size for better responsiveness */
+    margin-right: 10px; /* Adjusted margin */
+}
+
+.company-name-header {
+    margin: 0;
+    font-size: 24px; /* Adjusted font size for better responsiveness */
+    color: black;
+}
+
+/* Navigation Styles */
+.main-navigation .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-navigation .nav-item {
+    margin-left: 15px; /* Adjusted margin */
+}
+
+.main-navigation .nav-link {
+    text-decoration: none;
+    color: 	#d7dccd;
+    font-weight: 300;
+    font-size: 20px; /* Adjusted font size for better responsiveness */
+    transition: color 0.3s ease;
+}
+
+.main-navigation .nav-link:hover {
+    color: #000000;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    min-height: calc(100vh - 75px); /* Use min-height for flexibility */
+    background-image: url('images/bc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: center; /* Center text within the content */
+    padding: 20px; /* Adjusted padding for better responsiveness */
+    color: #333;
+    position: relative;
+    top: 75px; /* Adjusted top value */
+}
+
+.hero-content {
+    max-width: 95%; /* Adjusted max-width */
+}
+
+.hero-title {
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: 700;
+    margin-bottom: 20px; /* Adjusted margin */
+    white-space: normal; /* Allow text to wrap */
+}
+
+.hero-description {
+    font-size: 1.2rem; /* Increased font size */
+    margin-bottom: 40px; /* Adjusted margin */
+}
+
+.hero-tagline {
+    font-size: 2rem; /* Increased font size */
+    font-weight: 600;
+    border: 2px solid #333;
+    padding: 10px 20px; /* Adjusted padding */
+    display: inline-block; /* To allow width to fit content and be centered */
+    margin-top: 20px; /* Adjusted margin */
+    text-align: center;
+}
+
+/* Main Content Styles */
+.site-main {
+    padding-top: 0;
+}
+
+/* Page Section Styles */
+.page-section {
+    max-width: 95%; /* Adjusted max-width */
+    padding: 30px; /* Adjusted padding */
+    margin: 20px auto; /* Adjusted margin */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    background-color: #f9f9f9; /* Light grey background */
+    background-blend-mode: overlay;
+    position: relative;
+    top: 75px; /* Adjusted top value */
+    border: 1px solid #ddd; /* Light grey border */
+}
+
+.section-title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px; /* Adjusted margin */
+    font-size: 2.2rem; /* Adjusted font size */
+    padding-bottom: 20px;
+}
+
+.section-subtitle {
+    color: rgba(58, 82, 51, 0.9);
+    margin-top: 0;
+    margin-bottom: 15px; /* Adjusted margin */
+    font-size: 1.6rem; /* Adjusted font size */
+    padding-bottom: 0;
+    font-weight: bold; /* Make product names bold */
+}
+
+.bullet-list {
+    font-size: 1rem; /* Adjusted font size */
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 8px; /* Adjusted margin */
+}
+
+/* Footer Styles */
+.site-footer {
+    background: #333;
+    color: #fff;
+    border-top: 1px solid #444;
+    padding: 15px 20px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem; /* Adjusted font size */
+    position: relative;
+    top: 75px; /* Adjusted top value */
+    flex-direction: column; /* Stack elements on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+}
+
+.site-footer .copyright {
+    margin-top: 5px; /* Added margin for spacing when stacked */
+    font-size: inherit;
+}
+
+.site-footer .footer-contact-info {
+    text-align: center; /* Center text on smaller screens */
+    margin-top: 10px; /* Added margin for spacing */
+    font-size: inherit;
+}
+
+.site-footer .footer-contact-info a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer .footer-contact-info a:hover {
+    color: #b64d4d;
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+    .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+    }
+    .site-footer .copyright {
+        margin-top: 0;
+    }
+    .site-footer .footer-contact-info {
+        text-align: right;
+        margin-top: 0;
+    }
+    .main-navigation .nav-list {
+        flex-direction: row;
+    }
+    .main-navigation .nav-item {
+        margin-left: 25px;
+        margin-bottom: 0;
+    }
+}
+
+/* Ensure two columns on smaller screens as well */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* Maintain two columns on smaller screens */
+    }
+}

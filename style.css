@@ -17,7 +17,7 @@ body {
 /* Header Styles */
 .site-header {
     background: rgba(58, 82, 51, 0.9);
-    padding: 18px 20px; /* Adjusted padding for better responsiveness */
+    padding: 18px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,13 +40,13 @@ body {
 }
 
 .logo {
-    height: 40px; /* Adjusted logo size for better responsiveness */
-    margin-right: 10px; /* Adjusted margin */
+    height: 40px;
+    margin-right: 10px;
 }
 
 .company-name-header {
     margin: 0;
-    font-size: 24px; /* Adjusted font size for better responsiveness */
+    font-size: 24px;
     color: black;
 }
 
@@ -59,14 +59,14 @@ body {
 }
 
 .main-navigation .nav-item {
-    margin-left: 15px; /* Adjusted margin */
+    margin-left: 15px;
 }
 
 .main-navigation .nav-link {
     text-decoration: none;
-    color: 	#d7dccd;
+    color: #d7dccd;
     font-weight: 300;
-    font-size: 20px; /* Adjusted font size for better responsiveness */
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -76,44 +76,44 @@ body {
 
 /* Hero Section Styles */
 .hero-section {
-    min-height: calc(100vh - 75px); /* Use min-height for flexibility */
-    background-image: url('images/bc.jpg');
+    min-height: calc(100vh - 75px);
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
-    text-align: center; /* Center text within the content */
-    padding: 20px; /* Adjusted padding for better responsiveness */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
     color: #333;
     position: relative;
-    top: 75px; /* Adjusted top value */
+    top: 75px;
 }
 
 .hero-content {
-    max-width: 95%; /* Adjusted max-width */
+    max-width: 95%;
 }
 
 .hero-title {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px; /* Adjusted margin */
-    white-space: normal; /* Allow text to wrap */
+    margin-bottom: 20px;
+    white-space: normal;
 }
 
 .hero-description {
-    font-size: 1.2rem; /* Increased font size */
-    margin-bottom: 40px; /* Adjusted margin */
+    font-size: 1.2rem;
+    margin-bottom: 40px;
 }
 
 .hero-tagline {
-    font-size: 2rem; /* Increased font size */
+    font-size: 2rem;
     font-weight: 600;
     border: 2px solid #333;
-    padding: 10px 20px; /* Adjusted padding */
-    display: inline-block; /* To allow width to fit content and be centered */
-    margin-top: 20px; /* Adjusted margin */
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -124,44 +124,44 @@ body {
 
 /* Page Section Styles */
 .page-section {
-    max-width: 95%; /* Adjusted max-width */
-    padding: 30px; /* Adjusted padding */
-    margin: 20px auto; /* Adjusted margin */
+    max-width: 95%;
+    padding: 30px;
+    margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-size: cover;
     background-position: center;
     color: #333;
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: #f9f9f9;
     background-blend-mode: overlay;
     position: relative;
-    top: 75px; /* Adjusted top value */
-    border: 1px solid #ddd; /* Light grey border */
+    top: 75px;
+    border: 1px solid #ddd;
 }
 
 .section-title {
     text-align: center;
     color: #000;
-    margin-bottom: 20px; /* Adjusted margin */
-    font-size: 2.2rem; /* Adjusted font size */
+    margin-bottom: 20px;
+    font-size: 2.2rem;
     padding-bottom: 20px;
 }
 
 .section-subtitle {
     color: rgba(58, 82, 51, 0.9);
     margin-top: 0;
-    margin-bottom: 15px; /* Adjusted margin */
-    font-size: 1.6rem; /* Adjusted font size */
+    margin-bottom: 15px;
+    font-size: 1.6rem;
     padding-bottom: 0;
-    font-weight: bold; /* Make product names bold */
+    font-weight: bold;
 }
 
 .bullet-list {
-    font-size: 1rem; /* Adjusted font size */
+    font-size: 1rem;
     display: list-item;
     list-style-type: disc;
     margin-left: 20px;
-    margin-top: 8px; /* Adjusted margin */
+    margin-top: 8px;
 }
 
 /* Footer Styles */
@@ -169,25 +169,25 @@ body {
     background: #333;
     color: #fff;
     border-top: 1px solid #444;
-    padding: 15px 20px; /* Adjusted padding */
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem; /* Adjusted font size */
+    font-size: 1.1rem;
     position: relative;
-    top: 75px; /* Adjusted top value */
-    flex-direction: column; /* Stack elements on smaller screens */
-    text-align: center; /* Center text on smaller screens */
+    top: 75px;
+    flex-direction: column;
+    text-align: center;
 }
 
 .site-footer .copyright {
-    margin-top: 5px; /* Added margin for spacing when stacked */
+    margin-top: 5px;
     font-size: inherit;
 }
 
 .site-footer .footer-contact-info {
-    text-align: center; /* Center text on smaller screens */
-    margin-top: 10px; /* Added margin for spacing */
+    text-align: center;
+    margin-top: 10px;
     font-size: inherit;
 }
 
@@ -198,10 +198,10 @@ body {
 }
 
 .site-footer .footer-contact-info a:hover {
-    color: #b64d4d;
+   color:  rgba(64, 212, 19, 0.9);
 }
 
-/* Responsive Design */
+/* Responsive for Desktop Only */
 @media (min-width: 769px) {
     .site-footer {
         flex-direction: row;
@@ -209,25 +209,136 @@ body {
         text-align: left;
         align-items: center;
     }
+
     .site-footer .copyright {
         margin-top: 0;
     }
+
     .site-footer .footer-contact-info {
         text-align: right;
         margin-top: 0;
     }
+
     .main-navigation .nav-list {
         flex-direction: row;
     }
+
     .main-navigation .nav-item {
         margin-left: 25px;
         margin-bottom: 0;
     }
 }
 
-/* Ensure two columns on smaller screens as well */
+/* Responsive for Tablets */
+@media (max-width: 1023px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .bullet-list {
+        font-size: 0.95rem;
+    }
+
+    .company-name-header {
+        font-size: 20px;
+    }
+
+    .main-navigation .nav-link {
+        font-size: 18px;
+    }
+
+    .logo {
+        height: 35px;
+    }
+}
+
+/* Responsive for Mobile Devices */
 @media (max-width: 768px) {
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr); /* Maintain two columns on smaller screens */
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .logo-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main-navigation {
+      display: none;
+    }
+
+    .main-navigation .nav-list {
+       display: none;
+    }
+
+    .main-navigation .nav-item {
+        margin: 0;
+    }
+
+    .hero-section {
+        padding: 40px 10px;
+          margin-top: -15px;
+    
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.3rem;
+        padding: 6px 14px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .bullet-list {
+        font-size: 0.9rem;
+    }
+
+    .page-section {
+        padding: 20px 15px;
+    }
+
+    .company-name-header {
+        font-size: 18px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .site-footer {
+        font-size: 0.9rem;
+        padding: 10px 15px;
     }
 }

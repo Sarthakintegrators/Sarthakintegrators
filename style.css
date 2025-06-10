@@ -77,7 +77,7 @@ body {
 /* Hero Section Styles */
 .hero-section {
     min-height: calc(100vh - 75px);
-    background-image: url('images/Background.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

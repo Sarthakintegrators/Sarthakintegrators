@@ -54,6 +54,7 @@ body {
 .main-navigation .nav-list {
     list-style: none;
     padding: 0;
+    padding-right: 20px;
     margin: 0;
     display: flex;
 }
@@ -64,14 +65,16 @@ body {
 
 .main-navigation .nav-link {
     text-decoration: none;
-    color: #d7dccd;
+    color: #000000;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 21px;
     transition: color 0.3s ease;
+    font-weight: 600;
+    padding-right: 10px;
 }
 
 .main-navigation .nav-link:hover {
-    color: #000000;
+    color: #ffffff;
 }
 
 /* Hero Section Styles */
@@ -85,7 +88,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding:20px;
+    padding-bottom: 70px;
     color: #333;
     position: relative;
     top: 75px;
@@ -169,7 +173,7 @@ body {
     background: #333;
     color: #fff;
     border-top: 1px solid #444;
-    padding: 15px 20px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,6 +187,8 @@ body {
 .site-footer .copyright {
     margin-top: 5px;
     font-size: inherit;
+    padding-top: 45px;
+ 
 }
 
 .site-footer .footer-contact-info {
@@ -198,7 +204,7 @@ body {
 }
 
 .site-footer .footer-contact-info a:hover {
-   color:  rgba(64, 212, 19, 0.9);
+   color:  rgba(86, 115, 71, 0.9);
 }
 
 /* Responsive for Desktop Only */
@@ -274,9 +280,8 @@ body {
     .site-header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px;
+        padding: 15px 20px;
     }
-
     .logo-container {
         width: 100%;
         justify-content: space-between;
@@ -295,7 +300,7 @@ body {
     }
 
     .hero-section {
-        padding: 40px 10px;
+        padding: 10px 10px;
           margin-top: -15px;
     
     }
@@ -330,7 +335,7 @@ body {
     }
 
     .company-name-header {
-        font-size: 18px;
+        font-size: 21px;
     }
 
     .logo {
@@ -339,6 +344,12 @@ body {
 
     .site-footer {
         font-size: 0.9rem;
-        padding: 10px 15px;
+        padding: 0px 15px 15px 15px;
+        
     }
+       .site-footer .copyright {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
 }

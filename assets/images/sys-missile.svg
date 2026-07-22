@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Missile Systems">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#071109"/><stop offset=".52" stop-color="#17321f"/><stop offset="1" stop-color="#0a1710"/></linearGradient>
+    <radialGradient id="glow" cx="55%" cy="42%" r="55%"><stop offset="0" stop-color="#ff9f1c" stop-opacity=".26"/><stop offset=".55" stop-color="#6f8c4f" stop-opacity=".10"/><stop offset="1" stop-color="#061009" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0v44" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="1"/></pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect width="1200" height="700" fill="url(#grid)"/>
+  <circle cx="865" cy="190" r="260" fill="url(#glow)"/>
+  <path d="M0 560 C190 490 310 622 500 542 C690 462 840 560 1200 460 L1200 700 L0 700Z" fill="#203a24" opacity=".62"/>
+  <path d="M0 604 C190 532 350 656 548 584 C760 508 900 596 1200 520 L1200 700 L0 700Z" fill="#0f2116" opacity=".9"/>
+  <g stroke="#ffffff" stroke-opacity=".18" fill="none"><circle cx="950" cy="180" r="68"/><circle cx="950" cy="180" r="122"/><path d="M950 58v244M828 180h244"/></g>
+  <g fill="none" stroke="#ff9f1c" stroke-linecap="round" stroke-linejoin="round" stroke-width="14">
+<path d="M255 450L760 220c60-26 124-18 174 22l36 28l-62 22l-430 264z"/>
+<path d="M520 328l-76-108l-88 42l76 108"/>
+<path d="M684 254l28 92"/>
+<path d="M330 416l-98-18l58 72"/>
+<path d="M816 252l54 78"/>
+<path d="M220 500l-86 38M268 526l-92 76M320 544l-44 84" stroke-opacity=".6"/>
+</g>
+  <text x="70" y="92" font-family="Rajdhani,Arial,sans-serif" font-size="34" font-weight="700" fill="#f7f8ef" letter-spacing="2">MISSILE SYSTEMS</text>
+  <text x="70" y="132" font-family="monospace" font-size="18" fill="#ff9f1c" letter-spacing="4">INDIGENOUS DEFENCE SYSTEMS</text>
+</svg>
